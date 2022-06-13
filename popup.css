@@ -1,0 +1,40 @@
+@font-face {
+    font-family: terminalFont;
+    src: url(Hermit-Regular.otf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(Glass_TTY_VT220.ttf);
+}
+
+body {
+    background-color: rgb(7, 27, 46) !important;
+    padding: 20px;
+}
+
+b {
+    color: rgb(20, 190, 20);
+    font-family: titleFont;
+    font-size: larger;
+}
+
+p, div {
+    font-family: terminalFont;
+    color:rgb(206, 206, 206);
+}
+
+h1 {
+    font-family: titleFont;
+    color:rgb(20, 190, 20) !important;
+    padding-top: 10px;
+}
+
+.container {
+    margin: 0rem !important;
+    justify-content: flex-start;
+}
+.row {
+    align-items: center;
+    justify-content: flex-start;
+}

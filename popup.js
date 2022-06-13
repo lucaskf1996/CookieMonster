@@ -33,12 +33,12 @@ async function showCookiesForTab(tabs) {
     tabName.appendChild(text);
 
     if(cookies.length == 0){
-      numCookies.style.color = "blue";
+      p.style.color = "rgb(27, 183, 255)";
     }
     else if(cookies.length < 2){
-      numCookies.style.color = "orange";
+      p.style.color = "orange";
     }else{
-      numCookies.style.color = "red";
+      p.style.color = "red";
     }
 
     //lista de cookies
@@ -94,13 +94,13 @@ async function showLocalStorage(tabs){
   storageSizeP.appendChild(storageSize);
   localstorageSize.appendChild(storageSizeP);
   if(total == 0){
-    localstorageSize.style.color = "blue";
+    storageSizeP.style.color = "rgb(27, 183, 255)";
   }
   else if(total < 2){
-    localstorageSize.style.color = "orange";
+    storageSizeP.style.color = "orange";
   }
   else{
-    localstorageSize.style.color = "red";
+    storageSizeP.style.color = "red";
   }
 }
     
@@ -135,13 +135,13 @@ async function showSessionStorage(tabs){
   storageSizeP.appendChild(storageSize);
   sessionStorageSize.appendChild(storageSizeP);
   if(total == 0){
-    sessionStorageSize.style.color = "blue";
+    storageSizeP.style.color = "rgb(27, 183, 255)";
   }
   else if(total < 2){
-    sessionStorageSize.style.color = "orange";
+    storageSizeP.style.color = "orange";
   }
   else{
-    sessionStorageSize.style.color = "red";
+    storageSizeP.style.color = "red";
   }
 }
     
@@ -183,13 +183,13 @@ async function showExternalConnections(tabs){
   extConnNumP.appendChild(extConnNum);
   connNum.appendChild(extConnNumP);
   if(numExtConn == 0){
-    connNum.style.color = "blue";
+    extConnNumP.style.color = "rgb(27, 183, 255)";
   }
   else if(numExtConn < 2){
-    connNum.style.color = "orange";
+    extConnNumP.style.color = "orange";
   }
   else{
-    connNum.style.color = "red";
+    extConnNumP.style.color = "red";
   }
 }
 
